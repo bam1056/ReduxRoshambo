@@ -1,0 +1,13 @@
+{
+  "OUTCOMES": [
+    ["Rock","Rock","tie"],
+    ["Rock","Scissors","computer"],
+    ["Rock","Paper","player"],
+    ["Paper","Scissors","player"],
+    ["Paper","Rock","computer"],
+    ["Paper","Paper","tie"],
+    ["Scissors","Scissors","tie"],
+    ["Scissors","Paper","computer"],
+    ["Scissors","Rock","player"]
+  ]
+}
