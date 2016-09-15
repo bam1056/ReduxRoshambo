@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import App from './components/App'
 import store from './store'
 import { Provider } from 'react-redux'
+import './styles/screen.sass'
 
 render(
   <Provider store={store}>

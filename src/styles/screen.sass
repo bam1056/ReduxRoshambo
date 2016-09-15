@@ -1,12 +1,71 @@
 @import 'utility'
+@import url('https://fonts.googleapis.com/css?family=Philosopher')
 
-$base-text-size: 16px
-$base-font-family: sans-serif
+$base-text-size: 20px
+$base-font-family: 'Philosopher', sans-serif
 
 html
   text-size-adjust: 100%
 
 body
   @include font-smoothing(on)
-  margin: 0
+  margin: 0 auto
   font: $base-text-size / 1 $base-font-family
+  width: 66%
+  min-height: 100vh
+
+.game-container
+  background-image: url(http://www.thisisroshambo.com/wp-content/uploads/2014/08/cropped-this-is-roshambo-final-with-watermark-1-to-the-left-copy1.jpg)
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: top
+  min-height: 100vh
+  width: auto
+  margin-top: 10vh
+
+  .game
+    display: flex
+    flex-direction: column
+    text-align: center
+    position: absolute
+    top: 55vh
+    bottom: 40vh
+    right: 20vw
+    left: 20vw
+
+    .input
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 125px
+
+
+      .Rock
+        background-image: url('../images/ROCK.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 200px
+        height: 200px
+        margin: 5px 15px
+        box-shadow: 5px 5px 5px gray
+
+      .Paper
+        background-image: url('../images/PAPER.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 200px
+        height: 200px
+        margin: 5px 15px
+        box-shadow: 5px 5px 5px gray
+
+      .Scissors
+        background-image: url('../images/SCISSORS.png')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 200px
+        height: 200px
+        margin: 5px 15px
+        box-shadow: 5px 5px 5px gray
